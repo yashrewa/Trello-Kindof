@@ -1,0 +1,13 @@
+[{
+        "id": 1,
+        "name": "Patient Express Board",
+        "href": "/org/1",
+        "icon": "Building"
+    },
+    {
+        "id": 2,
+        "name": "My company Board",
+        "href": "/org/2",
+        "icon": "Building2"
+    }
+]
