@@ -1,9 +1,7 @@
-import { redirect } from "next/navigation";
 import BoardNavBar from "./_components/BoardNavbar";
 import { Toaster } from "@/components/ui/toaster";
 const BoardIdLayout = async ({
-  children,
-  params
+  children
 }: {
   children: React.ReactNode;
   params: { boardId: string };
@@ -31,7 +29,7 @@ const BoardIdLayout = async ({
           Board: {boardInfo.title}
         </h1>
         {children}
-        <Toaster/>
+        <Toaster />
       </main>
     </div>
   );

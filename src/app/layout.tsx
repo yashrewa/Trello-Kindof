@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "TRELLO KINDOF",
   description: "nothing special"
 };
-
+console.log("hello from trello")
 export default function RootLayout({
   children
 }: Readonly<{

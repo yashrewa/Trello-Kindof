@@ -9,10 +9,9 @@ import {
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
-import { Activity, Building, Building2, Layout, Settings } from "lucide-react";
+import { Building, Building2, Layout, Settings } from "lucide-react";
 import orgData from "../../data/orgsData.json";
 
-import { useEffect } from "react";
 const Sidebar = () => {
   const router = useRouter();
   const pathName = usePathname();
@@ -22,10 +21,7 @@ const Sidebar = () => {
       label: "Boards",
       icon: <Layout className="h-4 w-4 mr-2" />
     },
-    // {
-    //   label: "Activity",
-    //   icon: <Activity className="h-4 w-4 mr-2" />
-    // },
+
     {
       label: "Settings",
       icon: <Settings className="h-4 w-4 mr-2" />
@@ -45,13 +41,13 @@ const Sidebar = () => {
             <AccordionItem value={id.toString()} className="border-none">
               <AccordionTrigger
                 className={cn(
-                  "flex items-center gap-x-2 p-1.5 text-neutral-700 rounded-md hover:bg-neutral-50 transition text-start no-underline hover:no-underline"
+                  "flex  items-center gap-x-2 p-1.5 text-neutral-700 rounded-md hover:bg-neutral-50 transition text-start no-underline hover:no-underline"
                 )}
               >
-                <div className="flex items-center gap-x-2 text-lg">
+                <div className="flex justify-start items-center gap-x-2 text-lg">
                   {icon === "Building" && <Building />}
                   {icon === "Building2" && <Building2 />}
-                  {name}
+                  <span className=" line-clamp-1 max-w-44">{name}</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="pt-1 text-neutral-700">
