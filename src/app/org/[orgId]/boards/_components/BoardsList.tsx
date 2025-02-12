@@ -2,9 +2,8 @@
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { User } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { revalidatePath } from "next/cache";
 import Link from "next/link";
 import data from "../../../../../data/boardsData.json";
 import { useToast } from "@/hooks/use-toast";

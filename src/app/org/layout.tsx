@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/toaster";
 import Sidebar from "../_components/Sidebar";
 
-const OrgLayout = async ({ children }: { children: React.ReactNode }) => {
+const OrgLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <main className="pt-20 md:pt-20 px-4 mx-auto">
       <div className="flex gap-x-7">

@@ -86,7 +86,7 @@ const ListContainer = () => {
         setList(newList);
       } else {
         const [movedCard] = sourceList.cards.splice(source.index, 1);
-        console.log(movedCard);
+        console.log("movedCard",movedCard);
 
         movedCard.listId = destination.droppableId;
 
